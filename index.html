@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codemaker's Plotter</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <script src="scripts/workerManager.js"></script>
+    <script src="scripts/cm4plotter.js"></script>
+</head>
+<body>
+    <canvas id="mainCanvas"></canvas>
+    <div id="guiDiv">
+        <button id="buttonHide">Hide (H)</button>
+        <button id="buttonAdvanced">Advanced</button>
+        <button id="buttonRestart">Restart</button>
+        <div id="options">
+            <p>Func:</p><textarea id="inpFunc"></textarea>
+            <p id="error" class="hidden">error</p>
+            <p>X:</p><input type="number" id="inpX" value="0">
+            <p>Y:</p><input type="number" id="inpY" value="0">
+            <p>Scale:</p><input type="number" id="inpScale" value="1" min="1e-20">
+            <p class="advanced hidden">Tasks:</p><p class="advanced hidden" id="tasks">1234</p>
+            <p class="advanced hidden">pix size:</p><p class="advanced hidden" id="pixSize">1</p>
+            <p class="advanced hidden">lod power</p><input class="advanced hidden" type="number" id="inpLodP" value="4", min="2">
+            <p class="advanced hidden">lod start</p><input class="advanced hidden" type="number" id="inpLodC" value="2", min="0">
+            <p class="advanced hidden">lod end</p><input class="advanced hidden" type="number" id="inpLodM" value="0">
+            <p class="advanced hidden">pix per chunk</p><input class="advanced hidden" type="number" id="inpPPC" value="10000", min="1">
+            <p class="advanced hidden">threads</p><input class="advanced hidden" type="number" id="inpThread" value="10", min="1", max="100">
+        </div>
+    </div>
+</body>
+</html>

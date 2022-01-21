@@ -1,0 +1,79 @@
+body {
+    margin:0;
+    overflow: hidden;
+}
+
+#guiDiv {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff8;
+    padding: 5px;
+    border-width: 0;
+    border-right-width: 2px;
+    border-bottom-width: 2px;
+    border-style: solid;
+    border-color: #0008;
+    color: #000;
+}
+
+#guiDiv:hover {
+    background-color: #fffb;
+}
+
+#guiDiv.hidden {
+    visibility: hidden;
+}
+
+#guiDiv > button {
+    background-color: #fff0;
+    border-style: solid;
+    border-width: 2px;
+    margin-right: 5px;
+}
+#guiDiv > button:active {
+    border-color: #000;
+    background-color: #fff8;
+}
+
+#options {
+    display: grid;
+    /* grid-template-columns: 30% 70%; */
+}
+
+#options > * {
+    background-color: #fff0;
+}
+
+#options > p {
+    padding: 2;
+    margin: 0;
+    display: inline;
+}
+
+#options > p#error {
+    background-color: #f008;
+    grid-column: 1 / span 2;
+}
+
+#options > input {
+    margin: 2;
+    display: inline;
+    border-style: solid;
+    border-width: 2px;
+}
+
+#options > textarea {
+    margin: 2;
+    display: inline;
+    border-style: solid;
+    border-width: 2px;
+}
+
+#options > .hidden {
+    visibility: hidden;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
