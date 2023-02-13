@@ -61,6 +61,9 @@ function toRGB(result) {
     } else {
         throw `Plotter: type ${typeof result} cannot be displayed`
     }
+    out[0] = Math.max(Math.min(out[0], 255), 0);
+    out[1] = Math.max(Math.min(out[1], 255), 0);
+    out[2] = Math.max(Math.min(out[2], 255), 0);
     return out;
 }
 
